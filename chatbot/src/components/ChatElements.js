@@ -52,7 +52,7 @@ const ChatElements = ({socket}) => {
     socket.on("getData", data=>{
       localStorage.setItem('Bots', JSON.stringify(data));
       setChatBots(JSON.parse(localStorage.getItem('Bots')))
-    });      
+    });     
   });
  
   useEffect(()=>{    
